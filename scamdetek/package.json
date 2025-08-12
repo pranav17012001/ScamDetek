@@ -1,0 +1,60 @@
+{
+  "name": "scamdetek",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8000",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.9.0",
+    "d3": "^7.9.0",
+    "d3-scale-chromatic": "^3.1.0",
+    "malaysia-state-flag-icon-css": "github:jwarby/malaysia-state-flag-icon-css",
+    "papaparse": "^5.5.2",
+    "react": "^16.13.0",
+    "react-d3-cloud": "^1.0.6",
+    "react-dom": "^16.13.0",
+    "react-gender": "^1.2.2",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^6.0.3",
+    "react-router-dom": "^6.30.0",
+    "react-scripts": "5.0.1",
+    "react-slider": "^2.0.6",
+    "react-tooltip": "^4.5.1",
+    "react-wordcloud": "^1.2.7",
+    "react-world-flags": "^1.6.0",
+    "recharts": "^2.15.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "tailwindcss": "^3.4.17"
+  }
+}

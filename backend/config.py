@@ -1,0 +1,7 @@
+PINECONE_API_KEY = "pcsk_6Gofg8_QoSdQ9yq9aMtW5SNnae7548G3PuXax5Rrysyos53ZoJ3XPVySXftjyCLvQyyBWR"
+PINECONE_ENV = "us-east-1"
+PINECONE_INDEX_NAME = "scam-knowledge"
+
+GEMINI_API_KEY = "AIzaSyC2CPbnauyf4_ILqKPSt4EMJcxR--QAiFM"
+
+EMBEDDING_MODEL_NAME = "all-mpnet-base-v2"

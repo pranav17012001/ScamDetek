@@ -1,0 +1,346 @@
+.scams-type-detail {
+  color: white;
+  min-height: 100vh;
+}
+
+.scams-type-detail .main-content {
+  padding: 2rem 15rem;
+}
+
+.scams-type-detail .phone-scam-section {
+  width: 900px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  align-items: center;
+}
+
+.scams-type-detail .scam-icon {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+}
+
+.scams-type-detail .phone-icon {
+  width: 120px;
+  height: auto;
+}
+
+.scams-type-detail .scam-description h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #98ff98, #00ffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.scams-type-detail .scam-description p {
+  font-size: 18px;
+  max-width: 600px;
+  color: #e0e0e0;
+}
+
+.scams-type-detail .section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #00BFFF, #87CEEB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Back button */
+.scams-type-detail .back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  color: #4FD1C5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scams-type-detail .back-button:hover {
+  color: #63e9db;
+  transform: translateX(-5px);
+}
+
+/* How It Happens Section */
+.scams-type-detail .how-it-happens {
+  margin-bottom: 60px;
+}
+
+.scams-type-detail .process-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.scams-type-detail .example-box {
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 100, 100, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.scams-type-detail .example-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #00BFFF, #4CFF4C) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.scams-type-detail .example-box p {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.scams-type-detail .example-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  min-height: 100px;
+  color: #e0e0e0;
+}
+
+.scams-type-detail .example-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* YouTube Video Styles */
+.scams-type-detail .video-thumbnail-container {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.scams-type-detail .video-thumbnail-container:hover {
+  transform: scale(1.02);
+}
+
+.scams-type-detail .video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.scams-type-detail .play-button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.scams-type-detail .play-button-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Video Player Container */
+.scams-type-detail .video-player-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Stop Button for Video */
+.scams-type-detail .video-stop-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.scams-type-detail .video-stop-button:hover {
+  transform: scale(1.2);
+}
+
+.scams-type-detail iframe {
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.scams-type-detail .steps-container {
+  width: 65%;
+}
+
+.scams-type-detail .step {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: rgba(0, 100, 100, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.scams-type-detail .step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #00BFFF, #4CFF4C) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.scams-type-detail .step-number {
+  font-size: 36px;
+  margin-right: 20px;
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+.scams-type-detail .step-content {
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+/* How to Defend Section */
+.scams-type-detail .how-to-defend {
+  margin-bottom: 60px;
+}
+
+.scams-type-detail .defense-box {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(0, 100, 100, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.scams-type-detail .defense-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #00BFFF, #4CFF4C) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.scams-type-detail .defense-box ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.scams-type-detail .defense-box ul li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+  color: #e0e0e0;
+}
+
+.scams-type-detail .defense-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00BFFF;
+  font-size: 20px;
+}
+
+.scams-type-detail .card-icon {
+  width: 240px;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .scams-type-detail .main-content {
+    padding: 2rem 5rem;
+  }
+
+  .scams-type-detail .phone-scam-section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .scams-type-detail .scam-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .scams-type-detail .scam-description h1 {
+    text-align: center !important;
+    font-size: 40px;
+  }
+
+  .scams-type-detail .scam-description p {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .scams-type-detail .process-container {
+    flex-direction: column;
+  }
+
+  .scams-type-detail .example-box, 
+  .scams-type-detail .steps-container {
+    width: 100%;
+  }
+
+  .scams-type-detail .example-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scams-type-detail .main-content {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,308 @@
+/* Word Cloud Modal Styles */
+.word-cloud-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.word-cloud-modal {
+  background-color: #0f1523;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(79, 209, 197, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  max-height: 800px;
+  border: 1px solid #1e2a45;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Embedded Word Cloud Styles */
+.word-cloud-embedded {
+  background-color: #0f1523;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(79, 209, 197, 0.2);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1e2a45;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+  flex: 1;
+}
+
+/* Keywords section styles */
+.keywords-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word-cloud-embedded::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4FD1C5, transparent);
+  z-index: 1;
+}
+
+.word-cloud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #1e2a45;
+  background-color: #0c111d;
+  flex-shrink: 0;
+}
+
+.word-cloud-header h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(79, 209, 197, 0.3);
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: 'Cyberpunk';
+  src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+}
+
+@font-face {
+  font-family: 'TechMono';
+  src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+}
+
+.word-cloud-modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4FD1C5, transparent);
+  z-index: 1;
+}
+
+.word-cloud-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #1e2a45;
+  background-color: #0c111d;
+}
+
+.word-cloud-modal-header h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(79, 209, 197, 0.3);
+  letter-spacing: 1px;
+}
+
+.close-modal-button {
+  background: none;
+  border: none;
+  color: #CBD5E0;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-modal-button:hover {
+  color: #4FD1C5;
+  background-color: rgba(79, 209, 197, 0.1);
+}
+
+.word-cloud-container {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #0a0d16;
+  border-radius: 4px;
+  margin: 10px;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(79, 209, 197, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(104, 211, 145, 0.03) 0%, transparent 50%);
+}
+
+.word-cloud-text {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.word-cloud-text:hover {
+  filter: brightness(1.5);
+  text-shadow: 0 0 8px currentColor;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
+
+.word-cloud-instructions {
+  padding: 12px 24px 16px;
+  color: #A0AEC0;
+  font-size: 0.95rem;
+  text-align: center;
+  border-top: 1px solid #1e2a45;
+  margin: 0 10px;
+  padding-top: 12px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.tech-footer {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #718096;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.source-attribution {
+  color: #A0AEC0;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.source-attribution a {
+  color: #4FD1C5;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.source-attribution a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-shadow: 0 0 5px rgba(79, 209, 197, 0.5);
+}
+
+.loading-word-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #a0aec0;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .word-cloud-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .word-cloud-instructions {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .word-cloud-modal {
+    width: 98%;
+    max-height: 95vh;
+  }
+  
+  .word-cloud-modal-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .word-cloud-container {
+    min-height: 400px;
+  }
+  
+  .word-cloud-embedded {
+    height: 100%;
+  }
+  
+  .word-cloud-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .word-cloud-instructions {
+    padding: 8px 16px 12px;
+  }
+}
+
+/* Mobile device small screen adaptation */
+@media (max-width: 576px) {
+  .word-cloud-header h2 {
+    font-size: 1rem;
+  }
+  
+  .word-cloud-instructions {
+    font-size: 0.75rem;
+    padding: 6px 12px 10px;
+  }
+  
+  .tech-footer {
+    font-size: 0.7rem;
+  }
+}
+
+/* Animation for the loading spinner */
+.word-cloud-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #4FD1C5;
+  animation: spin 1s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

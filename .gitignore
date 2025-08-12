@@ -1,0 +1,87 @@
+# === Frontend (React) ===
+/scamdetek/node_modules
+/scamdetek/build
+/scamdetek/.pnp
+/scamdetek/.pnp.js
+/scamdetek/coverage
+# Environment files (React)
+.scamdetek/.env.local
+.scamdetek/.env.development.local
+.scamdetek/.env.test.local
+.scamdetek/.env.production.local
+# Logs (JS)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Python / Flask/FastAPI Backend ===
+**__pycache__**/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+# Flask/FastAPI-specific
+instance/
+*.db
+*.sqlite3
+
+# === Database related ===
+*.sql
+*.dump
+*.backup
+*.mysql
+*.sql.gz
+
+# === Backend environment files ===
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.test
+backend/.env.production
+
+# === Python Virtual Envs ===
+venv/
+ENV/
+env/
+myenv/
+.venv/
+pyenv.cfg
+
+# === ML Models and data files ===
+models/*.cbm
+models/*.xgb
+models/*.pkl
+models/*.json
+*.csv
+*.xlsx
+*.parquet
+*.feather
+
+# === Editor & OS junk ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === General ===
+*.swp
+*.swo
+
+# Folders
+data_cleaning/
+ML/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+node_modules
