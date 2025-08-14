@@ -15,19 +15,8 @@ This project aligns with SDG16 - Peace, justice and strong institutions (Digital
 - **AI Chatbot**: Get real-time assistance and information about online scams
 - **Knowledge Hub**: Access educational resources about common scams and prevention tips
 
-## Development Team
-
-Team Scamurai:
-
-- Pranav Prabakaran
-- Tang Chii Kang
-- Qusai Al-Ramadhani
-- Yu Mulin
-- Li Yang
-- Zhang Yuxuan
-
 ## Website Link
-https://scamdetek.live/
+[https://scamdetek.live/](https://scam-detek.vercel.app/)
 
 ## License
 
